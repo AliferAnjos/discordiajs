@@ -1,0 +1,122 @@
+#carinha {
+    color: #ad83be;
+    text-align: center;
+    font-family: 'Courier New', monospace; /* Ensures monospace font for proper ASCII art formatting */
+    white-space: pre; /* Keeps line breaks and spaces intact */
+    max-width: 100%; /* Prevents the container from stretching too far */
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+    font-size: 5px
+}
+
+#titulo{
+    color: #ad83be;
+    text-align: center;
+    font-family: 'Courier New', monospace; /* Ensures monospace font for proper ASCII art formatting */
+    white-space: pre; /* Keeps line breaks and spaces intact */
+    max-width: 100%; /* Prevents the container from stretching too far */
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+    font-size: 14px;
+}
+
+#pergunta {
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman";
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-line 
+    
+}
+
+button {
+    position: relative;
+    margin:0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    overflow-x: 100%;
+    font-weight: bold;
+    background-color: #ad83be;
+    color: #080808;
+    font-size: 20px;
+    text-align: center;
+    left: 580px;
+    align-items: center;
+    overflow-x: 100%;
+    text-align: center;
+}
+
+#feedback {
+    color:white;
+    max-width: 100%;
+    overflow-x: 100%;
+    text-align: center;
+    
+}
+
+#frenteverso {
+    position: relative; /* Define a referência para os botões */
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+
+    #back {
+        position: absolute;
+        top: 100px;  /* Distância do topo */
+        left: 50px; /* Distância da esquerda */
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #ad83be;
+        color:#080808;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        appearance: none;
+        max-width: 100%;
+        overflow-x: 100%;
+    
+    }
+
+
+    #next {
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        top: 100px;  
+        left:305px; /* Distância do topo */ /* Distância da direita */
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #ad83be;
+        color: #080808;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        appearance: none;
+        max-width: 100%;
+        overflow-x: 100%;
+    
+
+    }
+
+
+
+
+
+body {
+    background: #080808;
+    
+
+}
