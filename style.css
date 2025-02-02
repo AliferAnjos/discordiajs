@@ -72,64 +72,74 @@
     
 }
 
+/* Container dos botões */
+/* Container dos botões */
 #frenteverso {
-    position: relative; /* Define a referência para os botões */
-    width: 400px;
-    height: 100px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
 }
 
+/* Estilo do botão 'Voltar' */
+#back {
+    position: absolute;
+    top: 50%;  /* Centraliza verticalmente */
+    left: 10px;  /* Deixa bem próximo à borda esquerda */
+    transform: translateY(-50%);  /* Ajusta o centro vertical */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ad83be;
+    color: #080808;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Estilo do botão 'Próximo' */
+#next {
+    position: absolute;
+    top: 50%;  /* Centraliza verticalmente */
+    right: 1px;  /* Deixa bem próximo à borda direita */
+    transform: translateY(-50%);  /* Ajusta o centro vertical */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ad83be;
+    color: #080808;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    /* Manter os botões próximos da borda também no celular */
     #back {
-        position: absolute;
-        top: 100px;  /* Distância do topo */
-        left: 50px; /* Distância da esquerda */
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: none;
-        outline: none;
-        background-color: #ad83be;
-        color:#080808;
-        font-size: 14px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        appearance: none;
-        max-width: 100%;
-        overflow-x: 100%;
-    
+        left: 5px;  /* Mais próximo da borda esquerda no celular */
     }
-
 
     #next {
-        font-family: 'Courier New', Courier, monospace;
-        position: absolute;
-        top: 100px;  
-        left:305px; /* Distância do topo */ /* Distância da direita */
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: none;
-        outline: none;
-        background-color: #ad83be;
-        color: #080808;
-        font-size: 14px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        appearance: none;
-        max-width: 100%;
-        overflow-x: 100%;
-    
-
+        right: 5px;  /* Mais próximo da borda direita no celular */
     }
 
-
-
+    #back, #next {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
 
 
 body {
